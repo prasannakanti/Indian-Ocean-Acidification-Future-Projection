@@ -64,6 +64,7 @@ Example file naming convention:
 * `SSS_monthly_climatology_hist_nf_mf_ff_compressed.nc`
 * `DIC_monthly_climatology_hist_nf_mf_ff_compressed.nc`
 * `ALK_monthly_climatology_hist_nf_mf_ff_compressed.nc`
+* `pH_monthly_climatology_hist_nf_mf_ff_compressed.nc`
 
 Each NetCDF file includes:
 
