@@ -108,6 +108,6 @@ If you use these datasets, please cite the corresponding study or repository.
 
 ## Notes
 
-* SST, SSS, DIC, and ALK are directly obtained from ROMS ensemble simulations.
+* SST, SSS, DIC, and ALK are directly obtained from ROMS simulations.
 * pH and [H⁺] are derived offline using PyCO2SYS.
 * Files are compressed using NetCDF4 lossless compression.
