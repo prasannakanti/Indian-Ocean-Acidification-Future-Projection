@@ -83,25 +83,9 @@ Each NetCDF file includes:
 
 ---
 
-## Metadata Included
-
-Each NetCDF file contains:
-
-* title
-* institution
-* source
-* contact
-* description
-* creation date
-* CF conventions
-
----
-
 ## Institution
 
 Indian National Centre for Ocean Information Services
-
-Ocean Modeling and Data Assimilation Group
 
 ---
 
@@ -111,15 +95,6 @@ Ocean Modeling and Data Assimilation Group
 
 ---
 
-## Suggested Use
-
-These datasets are suitable for:
-
-* climate change impact assessment
-* ocean acidification studies
-* seasonal climatology analysis
-* carbonate system diagnostics
-* regional biogeochemical comparison
 
 ---
 
