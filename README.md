@@ -78,8 +78,8 @@ Each NetCDF file includes:
 
 * `period` → 4 periods
 * `month` → 12 months
-* `lat`
-* `lon`
+* `LAT_RHO`
+* `LON_RHO`
 
 ---
 
