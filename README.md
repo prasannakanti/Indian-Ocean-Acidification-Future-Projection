@@ -3,7 +3,7 @@
 
 ## Overview
 
-This repository contains monthly climatological surface ocean variables for the **Northern Indian Ocean**, prepared from **ROMS ensemble simulations** for historical and future climate periods.
+This repository contains monthly climatological surface ocean variables for the **Indian Ocean**, prepared from **ROMS simulations** for historical and future climate periods.
 
 The dataset is organized into four climatological periods:
 
@@ -18,7 +18,7 @@ Each file contains monthly climatology (`month = 1–12`) and a period dimension
 
 ## Available Variables
 
-### Directly extracted from ROMS ensemble output
+### Directly extracted from ROMS ensemble
 
 * Sea Surface Temperature (**SST**)
 * Sea Surface Salinity (**SSS**)
