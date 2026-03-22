@@ -3,7 +3,7 @@
 
 ## Overview
 
-This repository contains monthly climatological surface ocean variables for the **Indian Ocean**, prepared from **ROMS simulations** for historical and future climate periods.
+This repository contains monthly climatological surface ocean variables for the **Indian Ocean**, prepared from **ROMS simulations** for historical and future periods.
 
 The dataset is organized into four climatological periods:
 
