@@ -1,74 +1,67 @@
 # Indian-Ocean-Acidification-Future-Projection
-# Indian Ocean Surface Climatology Dataset (1980–2100)
+
+# Indian Ocean Surface pH Dataset (1980–2100)
 
 ## Overview
 
-This repository contains monthly climatological surface ocean variables for the **Indian Ocean**, prepared from **ROMS simulations** for historical and future periods.
+This repository contains **monthly interannual surface ocean pH data for the Indian Ocean**, prepared from **ROMS simulations** for historical and future periods.
 
-The dataset is organized into four climatological periods:
+The dataset is organized into four continuous simulation periods:
 
 * **hist** → 1980–2014
 * **nf** → 2015–2040 (Near Future)
 * **mf** → 2041–2070 (Mid Future)
 * **ff** → 2071–2100 (Far Future)
 
-Each file contains monthly climatology (`month = 1–12`) and a period dimension (`period = hist, nf, mf, ff`).
+Each file preserves the full **monthly interannual time series** for the corresponding period.
 
 ---
 
-## Available Variables
+## Available Variable
 
-### Directly extracted from ROMS ensemble
+### Surface carbonate chemistry variable
+
+* **Surface pH**
+
+---
+
+## Carbonate System Calculation
+
+Surface pH was calculated offline using **PyCO2SYS** from ROMS-derived carbonate system variables.
+
+### Inputs used
 
 * Sea Surface Temperature (**SST**)
 * Sea Surface Salinity (**SSS**)
 * Dissolved Inorganic Carbon (**DIC**)
 * Total Alkalinity (**ALK**)
 
-### Derived carbonate chemistry variables
-
-The following variables were calculated using **PyCO2SYS** from ROMS-derived SST, SSS, DIC, and ALK:
+### Output derived
 
 * Surface pH
-* Hydrogen ion concentration (**[H⁺]**)
 
 ---
 
-## Carbonate System Calculation
+## Carbonate Chemistry Solver
 
-Carbonate chemistry calculations were performed using:
-
-PyCO2SYS
+**PyCO2SYS**
 
 PyCO2SYS solves the marine carbonate system using thermodynamic equilibrium equations based on supplied carbonate parameters and hydrographic variables.
-
-Inputs used:
-
-* SST
-* SSS
-* DIC
-* ALK
-
-Outputs derived:
-
-* pH
-* [H⁺]
 
 ---
 
 ## File Structure
 
-Example file naming convention:
+Files are provided separately for each period:
 
-* `SST_monthly_climatology_hist_nf_mf_ff_compressed.nc`
-* `SSS_monthly_climatology_hist_nf_mf_ff_compressed.nc`
-* `DIC_monthly_climatology_hist_nf_mf_ff_compressed.nc`
-* `ALK_monthly_climatology_hist_nf_mf_ff_compressed.nc`
-* `pH_monthly_climatology_hist_nf_mf_ff_compressed.nc`
+* `pH_monthly_interannual_hist.nc`
+* `pH_monthly_interannual_NF.nc`
+* `pH_monthly_interannual_MF.nc`
+* `pH_monthly_interannual_FF.nc`
 
 Each NetCDF file includes:
 
-* monthly climatology
+* monthly interannual time series
 * compressed storage
 * CF-compliant metadata
 * global attributes
@@ -77,8 +70,7 @@ Each NetCDF file includes:
 
 ## NetCDF Dimensions
 
-* `period` → 4 periods
-* `month` → 12 months
+* `time`
 * `LAT_RHO`
 * `LON_RHO`
 
@@ -86,8 +78,9 @@ Each NetCDF file includes:
 
 ## Institution
 
-Indian National Centre for Ocean Information Services, Ministry of Earth Sciences, "Ocean Valley",
-Pragathi Nagar (BO), Nizampet (SO),
+Indian National Centre for Ocean Information Services
+Ministry of Earth Sciences
+"Ocean Valley", Pragathi Nagar (BO), Nizampet (SO)
 Hyderabad-500090, India
 
 ---
@@ -95,9 +88,6 @@ Hyderabad-500090, India
 ## Contact
 
 * [kunal.c@incois.gov.in](mailto:kunal.c@incois.gov.in)
-
----
-
 
 ---
 
@@ -109,6 +99,6 @@ If you use these datasets, please cite the corresponding study or repository.
 
 ## Notes
 
-* SST, SSS, DIC, and ALK are directly obtained from ROMS simulations.
-* pH and [H⁺] are derived offline using PyCO2SYS.
-* Files are compressed using NetCDF4 lossless compression.
+* Surface pH is derived offline using PyCO2SYS from ROMS ensemble outputs.
+* Files preserve full monthly interannual variability.
+* NetCDF files are compressed using lossless NetCDF4 compression.
