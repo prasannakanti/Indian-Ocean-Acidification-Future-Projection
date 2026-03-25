@@ -1,4 +1,4 @@
-# Indian-Ocean-Acidification-Future-Projection
+# Indian-OceanFuture-Projection
 
 # Indian Ocean Surface pH Dataset (1980–2100)
 
